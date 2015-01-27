@@ -1,0 +1,40 @@
+/* Variables */
+$fonts: Helvetica, Arial, sans-serif;
+
+body{
+  font-family: $fonts
+}
+
+.container {
+  width: 600px;
+  float: left;
+  margin: 0 auto;
+  background: #eee;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+  }
+}
+
+/* Mixins */
+@mixin border-radius($radius: 10px) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.sidebar {
+  @include border-radius(5px);
+}
+
+$base-fontsize : 16;
+
+/* Functions */
+@function global-margin($bfs) {
+  @return ($bfs * 1.5)*2 + px;
+}
+
+p {
+  margin-bottom: global-margin($base-fontsize);
+}

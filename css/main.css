@@ -1,0 +1,32 @@
+/* Variables */
+/* line 4, ../scss/main.scss */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 8, ../scss/main.scss */
+.container {
+  width: 600px;
+  float: left;
+  margin: 0 auto;
+  background: #eee;
+}
+/* line 14, ../scss/main.scss */
+.container a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Mixins */
+/* line 27, ../scss/main.scss */
+.sidebar {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* Functions */
+/* line 38, ../scss/main.scss */
+p {
+  margin-bottom: 48px;
+}
